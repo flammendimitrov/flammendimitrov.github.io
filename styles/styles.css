@@ -1,0 +1,259 @@
+body {
+  font-family: 'Helvetica Neue', 'Arial', sans-serif;
+  font-weight: 300;
+}
+
+svg {
+  margin: auto;
+  display: block;
+  margin-top: -3rem;
+}
+
+.names {
+fill: none;
+stroke: #fff;
+stroke-linejoin: round;
+}
+
+/* Tooltip CSS */
+.d3-tip {
+line-height: 1.5;
+font-size: 0.7rem;
+font-weight: 400;
+font-family: "Helvetica Neue", "avenir next", Arial, sans-serif;
+padding: 6px;
+background: rgba(0, 0, 0, 0.6);
+border-radius: 1px;
+pointer-events: none;
+padding: 0.2rem 1rem 0.4rem 1rem;
+}
+
+.d3-tip strong {
+  color: rgb(179, 229, 247);
+}
+
+.d3-tip .country-name {
+  text-align: center;
+  font-weight: 700;
+  color:rgb(247, 191, 239);
+  font-size: 1rem;
+}
+
+.d3-tip .population {
+  color: rgb(216, 150, 207);
+  text-align: center;
+  margin-bottom: 0.3rem;
+}
+
+.d3-tip .tip-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.d3-tip .no-data {
+  color: salmon;
+  text-align: center;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {      
+  box-sizing: border-box;
+  display: inline;
+  font-size: 8px;
+  width: 100%;
+  line-height: 1.5;
+  color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  pointer-events: none;
+  
+}
+
+/* Northward tooltips */
+.d3-tip.n:after {
+  content: "\25BC";
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+  text-align: center;
+}
+
+/* Eastward tooltips */
+.d3-tip.e:after {
+  content: "\25C0";
+  margin: -4px 0 0 0;
+  top: 50%;
+  left: -8px;
+}
+
+/* Southward tooltips */
+.d3-tip.s:after {
+  content: "\25B2";
+  margin: 0 0 1px 0;
+  top: -8px;
+  left: 0;
+  text-align: center;
+}
+
+/* Westward tooltips */
+.d3-tip.w:after {
+  content: "\25B6";
+  margin: -4px 0 0 -1px;
+  top: 50%;
+  left: 100%;
+}
+
+.graticule {
+  fill: none;
+  stroke: rgba(100, 100, 100, 0.05);
+}
+
+
+/*    text{
+  pointer-events:none;
+}*/
+
+.details{
+  color:white;
+  padding-left: 0.5rem;
+}
+
+#footer {
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 2rem;
+  width: fit-content;
+}
+
+#header {
+  font-family: "Helvetica Neue", "Arial", sans-serif;
+  margin: 1rem 0 1rem 0;
+  color: #777;
+}
+
+#title {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+#current-date {
+  text-align: center;
+  color: #aaa;
+  margin-top: 0.5rem;
+}
+
+#info-source {
+  font-size: 0.7rem;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+  color: #ccc;
+}
+
+#data-source a {
+  margin-left: 0.5rem;
+  text-decoration: none;
+}
+
+#data-updated span, #data-source a,#data-source a:active, #data-source a:visited {
+  color: #888;
+}
+
+#data-source a:hover {
+  color: rgb(16, 65, 138)
+}
+
+#legend {
+  color: #ccc;
+  font-size: 0.8rem;
+}
+
+#legend .legend-item {
+  margin-left: 1rem;
+  color: #888;
+}
+
+#legend .legend-item__color {
+  width: 10px; 
+  height: 10px; 
+  display: inline-block;
+  opacity: 0.8;
+}
+
+#controls {
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+#controls button {
+  /* border-color: rgb(90, 118, 8); */
+  border: none;
+  border-radius: 3px;
+  text-transform: uppercase;
+  padding: 0.5rem 1rem;
+  color: #aaa;
+}
+
+#controls button:hover, #controls button:focus {
+  background-color:  rgba(187, 152, 249, 0.5);
+  color: #555;
+  outline: 0;
+}
+
+#controls button.active {
+  background-color: rgba(187, 152, 249, 0.3);
+  color: #555;
+}
+
+#loading {
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: #ccc;
+}
+
+#world-stats {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  margin-bottom: -4rem;
+  font-size: 0.8rem;
+}
+
+#world-stats .category {
+  margin-left: 2rem;
+  color: #ccc;
+}
+
+#world-stats .category:first-of-type {
+  margin-left: 0;
+}
+
+#world-stats .value {
+  margin-left: 0.5rem;
+}
+
+#world-stats .percentage {
+  margin-left: 0.5rem;
+  opacity: 40%;
+}
+
+#world-stats .cases {
+  color: rgb(71, 0, 138)
+}
+
+#world-stats .deaths {
+  color: rgb(196, 0, 0);
+}
+
+#world-stats .recovered {
+  color: rgb(97, 145, 0);
+}
+
+#world-stats .active {
+  color: rgb(203, 95, 0);
+}
