@@ -105,6 +105,7 @@ var population = [
   {
     "id": "COD",
     "name": "Congo, Democratic Republic of the",
+    "alternativeName": "Congo",
     "population": "70916439",
     "": ""
   },
@@ -178,6 +179,7 @@ var population = [
   {
     "id": "TZA",
     "name": "Tanzania",
+    "alternativeName": "United Republic of Tanzania",
     "population": "41892895",
     "": ""
   },
@@ -682,6 +684,7 @@ var population = [
   {
     "id": "ARE",
     "name": "United Arab Emirates",
+    "alternativeName": "UAE",
     "population": "4975593",
     "": ""
   },
@@ -694,6 +697,7 @@ var population = [
   {
     "id": "CAF",
     "name": "Central African Republic",
+    "alternativeName": "CAR",
     "population": "4844927",
     "": ""
   },
@@ -754,6 +758,7 @@ var population = [
   {
     "id": "COG",
     "name": "Congo, Republic of the",
+    "alternativeName": "Congo",
     "population": "4125916",
     "": ""
   },
@@ -898,6 +903,7 @@ var population = [
   {
     "id": "GNB",
     "name": "Guinea-Bissau",
+    "alternativeName": "Guinea Bissau",
     "population": "1565126",
     "": ""
   },
@@ -934,6 +940,7 @@ var population = [
   {
     "id": "TLS",
     "name": "Timor-Leste",
+    "alternativeName": "East Timor",
     "population": "1154625",
     "": ""
   },
@@ -1442,6 +1449,7 @@ var population = [
   {
     "id": "ABV",
     "name": "Somaliland",
+    "alternativeName": "Somalia",
     "population": "3500000"
   },
   {

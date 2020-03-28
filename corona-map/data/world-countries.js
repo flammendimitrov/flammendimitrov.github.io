@@ -716,6 +716,7 @@ var countryData = {
     {
       "type": "Feature",
       "properties": {
+        "alternativeName": "UAE",
         "name": "United Arab Emirates"
       },
       "geometry": {
@@ -8052,6 +8053,7 @@ var countryData = {
     {
       "type": "Feature",
       "properties": {
+        "alternativeName": "CAR",
         "name": "Central African Republic"
       },
       "geometry": {
@@ -13648,6 +13650,7 @@ var countryData = {
     {
       "type": "Feature",
       "properties": {
+        "alternativeName": "Congo",
         "name": "Democratic Republic of the Congo"
       },
       "geometry": {
@@ -18872,6 +18875,7 @@ var countryData = {
     {
       "type": "Feature",
       "properties": {
+        "alternativeName": "Guinea-Bissau",
         "name": "Guinea Bissau"
       },
       "geometry": {
@@ -37142,6 +37146,7 @@ var countryData = {
     {
       "type": "Feature",
       "properties": {
+        "alternativeName": "Sudan",
         "name": "South Sudan"
       },
       "geometry": {
@@ -37974,6 +37979,7 @@ var countryData = {
     {
       "type": "Feature",
       "properties": {
+        "alternativeName": "Somalia",
         "name": "Somaliland"
       },
       "geometry": {
@@ -40159,6 +40165,7 @@ var countryData = {
     {
       "type": "Feature",
       "properties": {
+        "alternativeName": "Timor-Leste",
         "name": "East Timor"
       },
       "geometry": {
@@ -40739,6 +40746,7 @@ var countryData = {
     {
       "type": "Feature",
       "properties": {
+        "alternativeName": "Tanzania",
         "name": "United Republic of Tanzania"
       },
       "geometry": {
