@@ -297,7 +297,10 @@ const showLoading = () => {
 showLoading();
 
 const getTotal = (what, coronaData) => {
-  return coronaData.data.reduce((sum, country) => (sum + (country[what] || 0)), 0);
+  // calculating data until 04.04.2020
+  // return coronaData.data.reduce((sum, country) => (sum + (country[what] || 0)), 0);
+
+  return coronaData.data.filter(country => country.name === 'World')[0][what];
 };
 
 const getPercentage = (part, total) => ((part / total) * 100).toFixed(1);
