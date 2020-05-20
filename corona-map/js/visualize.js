@@ -114,22 +114,23 @@ const combineData = (countriesData, coronaData, population) => {
 };
 
 const makeLegend = (dataType, ranges, color, legend) => {
+  let previousRangeValue = -1;
+
   const legendItems = ranges[dataType].map((rangeItem, i) => {
-    return (
+    const legendElement = (
       '<span class="legend-item">' +
-      '<span class="legend-item__color" style="background-color: ' + color(rangeItem - 1) + '"></span>' +
-      '<span style="margin-left: 0.5rem;">' + (i === 0 ? '' : '< ') + rangeItem + '</span>' +
+      '<span class="legend-item__color" style="background-color: ' + color(previousRangeValue) + '"></span>' +
+      '<span style="margin-left: 0.5rem;">' + (previousRangeValue < 0 ? rangeItem : previousRangeValue + '+') + '</span>' +
       '</span>'
     );
+
+    previousRangeValue = rangeItem;
+
+    return legendElement;
   });
 
   return '<div id="legend"><span class="legend">Legend</span>' + legendItems.join(' ') + '</div>';
 };
-
-// queue()
-//     .defer(d3.json, "world_countries.json")
-//     .defer(d3.tsv, "world_population.tsv")
-//     .await(ready);
 
 const getDataForCountry = (name, allCountries) => allCountries.data.filter(c => c.name === name)[0];
 
