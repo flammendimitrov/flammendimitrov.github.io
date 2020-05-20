@@ -338,15 +338,15 @@ const getCoronaData = (tbody) => {
   const data = rows.map(r => r.map(c => c.textContent));
 
   const countries = data.map((country) => ({
-    name: country[0].trim(),
-    totalCases: parseFloat(country[1].replace(/,/g, '')),
-    newCases: country[2].trim(),
-    totalDeaths: parseFloat(country[3].replace(/,/g, '')) || 0,
-    newDeaths: country[4].trim(),
-    totalRecovered: parseFloat(country[5].replace(/,/g, '')) || 0,
-    activeCases: parseFloat(country[6].replace(/,/g, '')) || 0,
-    seriousCritical: parseFloat(country[7].replace(/,/g, '')) || 0,
-    perMillion: parseFloat(country[8].replace(/,/g, '')) || 0
+    name: country[1].trim(),
+    totalCases: parseFloat(country[2].replace(/,/g, '')),
+    newCases: country[3].trim(),
+    totalDeaths: parseFloat(country[4].replace(/,/g, '')) || 0,
+    newDeaths: country[5].trim(),
+    totalRecovered: parseFloat(country[6].replace(/,/g, '')) || 0,
+    activeCases: parseFloat(country[7].replace(/,/g, '')) || 0,
+    seriousCritical: parseFloat(country[8].replace(/,/g, '')) || 0,
+    perMillion: parseFloat(country[9].replace(/,/g, '')) || 0
 
   }));
 
